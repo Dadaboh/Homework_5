@@ -237,42 +237,40 @@ namespace Homework_5
     #region Volume
     public sealed class Cube : Square
     {
+        public double s;
         public double GetVolume()
         {
-            Square item = new Square();
-
-            return item.GetAreaByBase() * a;
+            return s * a;
         }
     }
 
     public sealed class Prism : Triangle
     {
+        public double s;
+
         public double GetVolume()
         {
-            Triangle item = new Triangle();
-
-            return item.GetAreaByThreeSidesAndRadius() * h;
+            return s * h;
         }
     }
 
     public sealed class Parallelepiped : Rectangle
     {
+        public double s;
         public double GetVolume()
         {
-            Rectangle item = new Rectangle();
-
-            return item.GetArea() * h;
+            return s * h;
         }
     }
 
     public sealed class Cylinder : Circle
     {
         public double h;
+        public double s;
+
         public double GetVolume()
         {
-            Circle item = new Circle();
-
-            return item.GetArea() * h;
+            return s * h;
         }
 
     }
@@ -280,11 +278,11 @@ namespace Homework_5
     public sealed class Cone : Circle
     {
         public double h;
+        public double s;
+
         public double GetVolume()
         {
-            Circle item = new Circle();
-
-            return item.GetArea() * h / 3;
+            return s * h / 3;
         }
     }
 
